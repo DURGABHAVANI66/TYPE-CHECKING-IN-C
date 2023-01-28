@@ -1,0 +1,47 @@
+Answer=0
+def add(a,b):
+    Answer = a + b 
+    print(str(a) + " + " + str( b) + " = " + str(Answer) + "\n")
+def sub(a,b):
+    Answer=a-b 
+    print(str(a) + " - " + str( b) + " =  " + str(Answer)) 
+def mul(a,b):
+    Answer=a*b 
+    print(str(a)+ "*"+str(b)+"="+str(Answer))
+def div(a,b):
+    Answer=a/b 
+    print(str(a)+ "/"+str(b)+"="+str(Answer) )
+    
+while True:
+    print("A:Addition")
+    print("B:Subtraction")
+    print("C:Multiplication")
+    print("D:Division")
+    print("E:Exit")
+    
+    choice=input("Enter your choice : ")
+    if choice=="A" or choice=="a":
+        print("Addition")
+        a=int(input("Enter your number :"))
+        b=int(input("Enter your number : "))
+        add(a,b)
+    elif choice=="b" or choice =="B":
+        print("Subtraction")
+        a=int(input("Enter your number :"))
+        b=int(input("Enter your number :"))
+        sub(a,b)
+    elif choice=="c" or choice=="C":
+        print("Multiplication")
+        a=int(input("Enter your number :"))
+        b=int(input("Enter your number :"))
+        mul(a,b)
+    elif choice=="d" or choice=="D":
+        print("Division")
+        a=int(input("Enter your number :"))
+        b=int(input("Enter your number :"))
+        div(a,b)
+    elif choice=="e" or choice=="E":
+        print("Program Ended ")
+        quit()
+
+ 
